@@ -1,0 +1,78 @@
+<div id="filter"></div>
+<!--  Component -->
+<div id="chats-component">
+	<!--  Chats container -->
+	<div id="chats-container">
+		<!--  Chats -->
+		<div class="chat" *ngFor="let chat of uiController.chats" (click)="uiController.loadChat(chat)">
+			<div class="chat-container">
+				<div class="img-container">
+					<img src="./assets/default_pp.webp" />
+				</div>
+				<div class="readable">
+					<div class="content">
+						<div class="recipient">{{ chat.getRecipientName () }}</div>
+						<div class="lastMessage">hello world, this is  {{ chat.getRecipientName () }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  Messages container -->
+	<div id="messages-container">
+		<div id="recipient-data-container">
+			<div id="recipient">{{ uiController.recipient }}</div>
+		</div>
+		<div id="messages-content-container">
+			<!--  Messages -->
+			<div class="message" [ngClass]="{ 'sent' : message.getMessage ().senderID == secret, 'received' : message.getMessage ().senderID  != secret }"
+				*ngFor="let message of uiController.messages">
+				<div class="message-container">
+					<div class="text">{{ message.getMessage().senderName }}: {{ message.getMessage().text }}</div>
+				</div>
+			</div>
+		</div>
+		<div id="input-container">
+			<app-confirm-box *ngIf="uiController.confirmMessage" [message]="uiController.confirmMessage"></app-confirm-box>
+			<app-alert-box *ngIf="uiController.alertMessage" [message]="uiController.alertMessage"></app-alert-box>
+			<input id="input" placeholder="Enter a /COMMAND or send a message"/>
+		</div>
+	</div>
+	<!--  Admins container -->
+	<div id="Admins" *ngIf="uiController.recipient && uiController.recipient[0] == '#'">
+		<div class="glow-effect" style="font-family: Streamster, cursive; font-size: 40px; color: #d101c0;">Admins</div>
+			<div class="member" *ngFor="let member of uiController.admins"> 
+			<div class="member-container">
+				<div class="img-container">
+				</div>
+				<div class="readable">
+					<div class="content">
+						<div class="recipient">
+							<button [routerLink]="['/user-profile', member.username]" class="member-button"> {{member.username}} </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  Members container -->
+		<div id="members-container" *ngIf="uiController.recipient && uiController.recipient[0] == '#'">
+			<div class="glow-effect" style="font-family: Streamster, cursive; font-size: 40px; color: #d101c0;">Members</div>
+			<!-- <div class="member" *ngIf="let member of uiController.members"> -->
+				<div class="member" *ngFor="let member of uiController.members"> 
+				<div class="member-container">
+					<div class="img-container">
+						<!-- <img src="./assets/default_pp.webp" /> -->
+					</div>
+					<div class="readable">
+						<div class="content">
+							<div class="recipient">
+								<button [routerLink]="['/user-profile', member.username]" class="member-button"> {{member.username}} </button>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+

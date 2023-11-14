@@ -1,0 +1,24 @@
+<div class="container">
+  <h1 class="glow-effect">Users</h1>
+  <div class="grid-wrapper">
+  
+  
+    <div class="user-card" *ngFor="let user of users">
+      <div class="user-item">
+        <h2>{{user.username}}</h2>
+        <img class="avatar" [src]="'http://localhost:3000/users/avatar/' + user.avatar" [routerLink]="['/user-profile', user.username]"/>
+      </div>
+  
+      <div class="status-container">
+        <div class="status-indicator" [ngStyle]="{'background-color': user.online ? 'var(--primary)' : '#242424'}"></div>
+        <div [ngClass]="{'status-online': user.online, 'status-offline': !user.online}">
+          <div class="status-light"></div>
+        </div>
+        <p class="status-text">{{ user.online ? 'Online' : 'Offline' }}</p>
+      </div>
+
+      <button [routerLink]="['/user-profile', user.username]" class="profile-button">See Profile</button>
+    </div>
+  </div>
+  
+</div>

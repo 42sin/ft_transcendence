@@ -1,0 +1,23 @@
+<header>
+    <nav>
+
+    <!-- Logo -->
+    <a routerLink="/" class="nav-link" class="nav-brand">
+      <span class="nav-brand-title">Pong Galactica</span>
+    </a>
+
+    <!-- Main Navigation -->
+    <ul class="nav-main">
+
+      <li *ngFor="let icon of icons">
+        <a [routerLink]="icon.link">
+          <img [src]="icon.src" [alt]="icon.alt">
+        </a>
+      </li>
+
+    </ul>
+
+    </nav>
+</header>
+
+<!-- maybe add responsive for smaller screen sizes -->

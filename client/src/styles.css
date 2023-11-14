@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('./assets/fonts/vcr-osd-mono/vcr-osd-mono.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Streamster';
+    src: url('./assets/fonts/streamster/streamster.ttf') format('truetype');
+}
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'VCR OSD Mono', monospace;
+font-family: 'Streamster', cursive; */
+
+:root {
+
+  /* Main colors */
+  --space-yellow: #f1c937;
+  --space-blue: #00babc;
+  --space-pink: #d101c0;
+
+  /* Extended colors */
+  --space-yellow-light: #f7dc6f;
+  --space-yellow-dark: #baa21a;
+  --space-yellow-accent: #ff8080;
+  --space-yellow-gradient: linear-gradient(45deg, var(--space-yellow), var(--space-yellow-accent));
+
+  --space-blue-light: #2ae0d4;
+  --space-blue-dark: #008284;
+  --space-blue-accent: #ee82ee;
+  --space-blue-gradient: linear-gradient(45deg, var(--space-blue), var(--space-blue-accent));
+
+  --space-pink-light: #e334e1;
+  --space-pink-dark: #8e0087;
+  --space-pink-accent: #40e0d0;
+  --space-pink-gradient: linear-gradient(45deg, var(--space-pink), var(--space-pink-accent));
+
+  /* Theme colors (defaults) */
+  --primary: var(--space-yellow); /* Pink - Used for main interactive elements, buttons, headings. */
+  --secondary: #212121; /* Dark Grey - Used for secondary elements, sidebar, footer. */
+  --accent: var(--space-yellow-accent); /* Turquoise - Used for highlighting important content, notifications, badges. */
+
+  --primary-light: var(--space-yellow-light); /* Light Pink - Used for hover and focus states on primary elements. */
+  --primary-dark: var(--space-yellow-dark); /* Dark Pink - Used for active state on primary elements. */
+
+  --font-color: var(--foreground);
+  --foreground: #f1f1f1; /* Light Gray - Used for text and UI elements. */
+  --background: #121212; /* Almost Black - Used as the background color for the entire app to represent space. */
+
+  --gradient: var(--space-yellow-gradient); /* Gradient - Can be used as background for headers or banners. */
+
+  --card-color: #181818dd;
+
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	color: #ffffff;
+	font-size: 13px;
+}
+
+.pong {
+	font-family: 'PingPong', sans-serif;
+}
+
+body, html{
+	background-color: #000000;
+	height: 100%;
+}
+
+.container-body-start{
+	width: 80%;
+	height: 80%;
+	margin: 0.2% 0.2% 0% 0%;
+}
+
+.container-body-end{
+	width: 20%;
+	margin: 0.2% 0% 0% 0.2%;
+}
+
+/* navbar style */
+nav ul{
+	list-style: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: lightblue;
+}
+
+nav a:hover{
+	cursor: pointer;
+	/* color: #FFA500; */
+}
+
+.nav-horizontal ul{
+	display: flex;
+}
+
+.nav-horizontal a{
+	margin-left: 15px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+}
+
+.glow-effect {
+  background-image: var(--gradient);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

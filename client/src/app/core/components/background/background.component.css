@@ -1,0 +1,90 @@
+.background {
+  position: absolute;
+  top: 120px;
+  height: calc(100vh - 120px);
+  width: 100vw;
+  background-image: url('../../../../assets/background.jpeg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  z-index: 0;
+}
+
+.max-container {
+  top: 120px;
+  height: 100%;
+  /* border: 2px solid var(--primary); */
+  z-index: 1;
+}
+
+/* Small */
+@media only screen and (min-width: 576px) {
+  .background {
+    top: 75px;
+    height: calc(100vh - 75px);
+  }
+
+  .max-container {
+    top: 75px;
+    margin-left: 20px;
+    margin-right: 16px;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+  .background {
+    top: 90px;
+    height: calc(100vh - 90px);
+  }
+
+  .max-container {
+    top: 90px;
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+  .background {
+    top: 100px;
+    height: calc(100vh - 100px);
+  }
+
+  .max-container {
+    top: 100px;
+    margin-inline: 32px;
+  }
+}
+
+/* Extra large */
+@media only screen and (min-width: 1200px) {
+  .max-container {
+    margin-inline: 48px;
+  }
+}
+
+/* Extra extra large */
+@media only screen and (min-width: 1440px) {
+  .background {
+    top: 110px;
+    height: calc(100vh - 110px);
+  }
+
+  .max-container {
+    top: 110px;
+  }
+}
+
+/* Extra extra extra large */
+@media only screen and (min-width: 1600px) {
+  .background {
+    top: 120px;
+    height: calc(100vh - 120px);
+  }
+
+  .max-container {
+    top: 120px;
+  }
+}

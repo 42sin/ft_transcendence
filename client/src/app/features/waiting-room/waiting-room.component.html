@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="innerContainer">
+    <h1 class="glow-effect">Waiting Room</h1>
+    <h2>Select a Map</h2>
+    <div class="map-icons">
+      <img src="../../../../assets/icon1.png" alt="Map 1" id="mapIcon1" class="map-icon" (click)="selectMap('Classic')" [ngClass]="{ 'map-icon-selected': selectedMap === 'Classic' }" />
+      <img src="../../../../assets/icon2.png" alt="Map 2" id="mapIcon2" class="map-icon" (click)="selectMap('Spaceship')" [ngClass]="{ 'map-icon-selected': selectedMap === 'Spaceship' }" />
+      <img src="../../../../assets/icon3.png" alt="Map 3" id="mapIcon3" class="map-icon" (click)="selectMap('Galaxy')" [ngClass]="{ 'map-icon-selected': selectedMap === 'Galaxy' }" />
+    </div>
+    <button (click)="this.playGame()">{{this.playGamePrompt}}</button>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+42toolbox
+docker/server
+docker/.env
+docker/docker-compose.yml
+docker/db
+.git
+.DS_Store
+node_modules
+server/node_modules
+client/node_modules
+Makefile

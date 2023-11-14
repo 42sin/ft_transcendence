@@ -1,0 +1,56 @@
+.container {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerContainer {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: flex-end;
+	background-color: #1d1d1dc7;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+button {
+    font-family: 'VCR OSD Mono', monospace;
+    font-size: 2em;
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: var(--background);
+    color: var(--foreground);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+button:hover {
+    background-color: var(--primary);
+}
+
+h1 {
+    font-family: 'Streamster', cursive;
+    font-size: 50px;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'VCR OSD Mono', monospace;
+    font-size: 50px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}

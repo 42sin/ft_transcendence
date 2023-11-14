@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  db:
+    container_name: db-container
+    image: postgres:alpine
+    #temporal port mapping
+    ports:
+      - ${DB_PORT}:5432
+    env_file:
+      .env
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    restart: always
+#     networks:
+#       - transcendence
+#   server:
+#     container_name: server-container
+#     image: server-container
+#     build:
+#       context:    ../
+#       dockerfile: ./docker/server/Dockerfile
+#     depends_on:
+#       - db
+#     #temporal port mapping
+#     ports:
+#       - ${PORT}:${PORT}
+#     env_file:
+#       .env
+#     restart: always
+#     networks:
+#       - transcendence
+
+
+# networks:
+#     transcendence:
+#       driver: bridge

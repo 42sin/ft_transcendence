@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="innerContainer">
+    <div  *ngIf="fileUrl">
+      <h2>QR Code</h2>
+      <img [src]="fileUrl" alt="QR Code">
+    </div>
+    <div  *ngIf="!fileUrl">
+      <h1>Google authenticator says: </h1>
+    </div>
+    <div class="input-container">
+      <input type="text" [(ngModel)]="codeValue" name="codeValue" placeholder="Enter code value" style="color: black">
+      <button (click)="submitCode()">Submit</button>
+    </div>
+  </div>
+</div>
+  

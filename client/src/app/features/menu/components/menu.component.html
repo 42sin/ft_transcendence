@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="menu-card">
+    <h1 class="glow-effect">Menu</h1>
+    <button [routerLink]="'/lobby'">
+        Play
+    </button>
+    <button [routerLink]="'/chats'">
+        Chats
+    </button>
+    <button [routerLink]="'/highscore'">
+        Highscore
+    </button>
+    <button [routerLink]="'/users'">
+      Users
+    </button>
+    <button [routerLink]="'/profile'">
+      Profile
+    </button>
+    <button (click)="logout()">
+        Sign Out
+    </button>
+  </div>
+</div>

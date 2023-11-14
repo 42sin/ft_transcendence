@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="glow-effect">Highscore</h1>
+  <div class="grid-wrapper">
+  
+    <div 
+      class="user-card" 
+      *ngFor="let rankedUser of rankedUsers"
+    >
+      <div class="rank" [attr.id]="rankedUser.rank === 1 ? 'gold' : rankedUser.rank === 2 ? 'silver' : rankedUser.rank === 3 ? 'bronze' : null">
+        <span>{{ rankedUser.rank }}</span>
+      </div>
+      <div class="profile">
+        <h2>{{ rankedUser.user.username }}</h2>
+        <img 
+          class="avatar"
+          [src]="'http://localhost:3000/users/avatar/' + rankedUser.user.avatar"
+        />
+        <div class="stats">
+          <span class="win-count">{{ rankedUser.user.wins }}</span>
+          <span class="divider">|</span>
+          <span class="loss-count">{{ rankedUser.user.loses }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

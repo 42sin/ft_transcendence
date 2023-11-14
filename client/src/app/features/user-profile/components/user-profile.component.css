@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-color);
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+span, p {
+  font-size: 1.5rem;
+  color: rgb(233, 233, 233);
+}
+
+.profile-data,
+.profile-statistics,
+.match-history,
+.user-interactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 10px;
+}
+
+img {
+  border-radius: 50%;
+  transition: border-radius .2s ease;;
+}
+
+img:hover {
+  border-radius: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.stats span {
+  font-size: 2.5rem;
+}
+
+.win-count {
+  color: var(--primary);
+}
+
+.divider {
+  color: rgb(80, 80, 80);
+}
+
+.loss-count {
+  color: rgb(80, 80, 80);
+}
+
+.winrate-text {
+  color: rgb(80, 80, 80);
+}
+
+.winrate {
+  color: rgb(233, 233, 233);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.hidden-buttonstyle {
+  color: rgb(233, 233, 233);
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: 2px solid var(--primary);
+  background-color: transparent;
+  box-shadow: none;
+  font-family: 'VCR OSD Mono', monospace;
+  transition:
+    background-color .3s ease, 
+    box-shadow .3s ease,
+    border-radius .3s ease;
+}
+
+.hidden-buttonstyle:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  box-shadow: 1px 1px 400px 5px var(--primary);
+  border-radius: 8px;
+}
+
+.match-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+  background-color: var(--card-color);
+  border-radius: 16px;
+  gap: 8px;
+}

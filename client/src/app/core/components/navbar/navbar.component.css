@@ -1,0 +1,201 @@
+/* Navbar */
+
+header {
+  height: 120px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-brand-title {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  background-image: var(--gradient);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-main {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+/* Icons */
+
+img {
+  width: 25px;
+  height: 25px;
+  padding: 0.8rem;
+}
+
+li {
+  margin-inline: 0.75rem;
+  border-radius: 50%;
+  background-color: rgb(40, 40, 40);
+  transition: border-radius 0.2s ease, background-color 0.2s ease;
+}
+
+li:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--primary);
+}
+
+/* Small */
+@media only screen and (min-width: 576px) {
+  header {
+    height: 75px;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 16px;
+  }
+
+  .nav-brand-title {
+    font-size: 2.25rem;
+  }
+
+  .nav-main {
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  li {
+    margin-inline: 0.25rem;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+  }
+}
+
+/* Medium */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 90px;
+  }
+
+  nav {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+
+  .nav-brand-title {
+    font-size: 3rem;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    padding: 1.25rem;
+  }
+
+  li:hover {
+    border-radius: 16px;
+  }
+}
+
+/* Large */
+@media only screen and (min-width: 992px) {
+  header {
+    height: 100px;
+  }
+
+  nav {
+    margin-inline: 32px;
+  }
+
+  .nav-brand-title {
+    font-size: 3.5rem;
+  }
+
+  li {
+    margin-inline: 0.75rem;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+    padding: 1.5rem;
+  }
+}
+
+/* Extra large */
+@media only screen and (min-width: 1200px) {
+  nav {
+    margin-inline: 48px;
+  }
+
+  .nav-brand-title {
+    font-size: 4rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Extra extra large */
+@media only screen and (min-width: 1440px) {
+  header {
+    height: 110px;
+  }
+
+  nav {
+    margin-inline: 48px;
+  }
+
+  .nav-brand-title {
+    font-size: 5rem;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Extra extra extra large */
+@media only screen and (min-width: 1600px) {
+  header {
+    height: 120px;
+  }
+
+  nav {
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  .nav-brand-title {
+    font-size: 6rem;
+  }
+
+  li {
+    margin-inline: 0.5rem;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}

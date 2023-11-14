@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="innerContainer" *ngIf="user">
+    <h1 class="glow-effect">PROFILE</h1>
+
+    <div class="profile-stats">
+      <span id="username">{{user.username}}</span>
+      <img
+        class="avatar"
+        width="120"
+        height="120"
+        [src]="'http://localhost:3000/users/avatar/' + user.avatar"
+      />
+      <span>{{user.email}}</span>
+    </div>
+
+    <div class="options">
+      <h2>Options</h2>
+
+      <div class="upload-image-form">
+        <input type="file" accept="image/jpeg, image/png" (change)="handleFileInput($event)" />
+        <button class="submit-button" type="submit" (click)="uploadAvatar()">Change Avatar</button>
+      </div>
+  
+      <form (ngSubmit)="submitUsername()">
+        <input type="text" [(ngModel)]="newUsername" name="newUsername" placeholder="New username" style="color: black;" />
+        <button class="submit-button" type="submit">Change Name</button>
+      </form>
+
+      <div class="coalition-container">
+        <button class="theme-button" id="yellow" (click)="changeTheme('yellow')">
+          <img src="../../../../assets/coalition1.png" alt="Logo of Coalition 1" />
+        </button>
+        <button class="theme-button" (click)="changeTheme('blue')">
+          <img src="../../../../assets/coalition2.png" alt="Logo of Coalition 2" />
+        </button>
+        <button class="theme-button"  (click)="changeTheme('pink')">
+          <img src="../../../../assets/coalition3.png" alt="Logo of Coalition 3" />
+        </button>
+      </div>
+
+      <button class="submit-button" *ngIf="!user.twoFact" (click)="turnOnTfa()">
+        Activate 2FA
+      </button>
+      <button class="submit-button" *ngIf="user.twoFact" (click)="turnOffTfa()">
+        Deactivate 2FA
+      </button>
+    </div>
+
+
+    <div class="user-list">
+      <h2>Friends:</h2>
+      <ul>
+        <li *ngFor="let friend of user.friendProfiles" style="font-family: VCR OSD Mono; font-size:20px; color:rgb(199, 250, 248)">
+          {{friend.username}}<span *ngIf="friend.online">(online)</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="user-list">
+      <h2>Friend invites:</h2>
+      <ul>
+        <li *ngFor="let friend of user.pendingProfiles">
+          <button class="submit-button" (click)="acceptFriend(friend.userID)"> Befriend {{friend.username}}</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="user-list">
+      <h2>Blocked friends:</h2>
+      <ul>
+        <li *ngFor="let friend of user.blockedProfiles" style="font-family: VCR OSD Mono; font-size:20px; color:rgb(199, 250, 248)">
+          {{friend.username}}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
