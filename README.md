@@ -9,10 +9,10 @@
   </a>
 
 <h3 align="center">ft_transcendence</h3>
-
-  <p align="center">
-    First Web Application
-    <br />
+<p align="center">
+    <a href="https://github.com/42sin/ft_transcendence/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/42sin/ft_transcendence/issues">Request Feature</a>
   </p>
 </div>
 
@@ -47,34 +47,39 @@
 
 #### [Go to Subject PDF]
 
-This is the first group project of the 42 core curriculum. The objective of this project is to create a simple bash-like shell. There were specific Project specifications, like only being allowed to use a few low-level functions and POSIX system calls. If you want to know more about the requirements, take a look at the Subject PDF. This project was done in collaboration with <a href="https://github.com/FlorianBindereif">Florian Bindereif</a>
+This is the last group project of the 42 core curriculum and arguably the biggest one. It is a full-stack web application that provides an engaging and interactive platform where users can enjoy a game of traditional Pong. It is designed with a modern and user-friendly interface offering a seamless experience for gaming and social interactions.
+<br>
+#### Team members:
+- [Gilbert]
+- [Joko]
+- [Sonja]
+- [Anahi]
+- [Ersin]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 * [![Nest][Nest.js]][Nest-url]
-* [![Angular][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
+* [![Postgresql][Postgresql]][Postgresql-url]
+* [![Docker][Docker]][Docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The Project was mainly tested on macOS, but it should work on all UNIX/LINUX based systems.
-
 ### Prerequisites
 
-To run the ft_transcendence, you need to install the readline library first, which can be done like this:
-  ```sh
-  brew install readline
-  ```
-Or
-  ```sh
-  apt-get install libreadline-dev
-  ```
+- API Key from [42]
+- Docker/Docker-compose
+
+To run the project, you need a .env file, I provided you with an example file inside of ./docker/ but you still need to put in your API key there. It should look something like this
+   ```sh
+   FORTYTWO_APP_ID="u-s0a2ud-exdc4c4502170a03960f0678cc960072f7bab69021e09b10a9b80adfde43a5150"
+   FORTYTWO_APP_SECRET="s-s0a2ud-459dc0ce839266e939babac417fae1fb0be00b9443029c849693534e67394032"
+   ```
 
 ### Installation
 
@@ -82,19 +87,15 @@ Or
    ```sh
    git clone https://github.com/42sin/ft_transcendence.git && cd ft_transcendence
    ```
-2. Change the readline path inside of the Makefile, you can see your path with `brew info readline`
-   ```Makefile
-   -I/usr/local/opt/readline/include
-   -L/usr/local/opt/readline/lib
-   ```
-3. Compile the project
+2. Compile the project
    ```sh
    make
    ```
-4. Run the ft_transcendence
+3. Connect
    ```sh
-   ./ft_transcendence
+   localhost:3000/
    ```
+For testing purposes, it will only run on your local system. It can also be run online, so multiple people at different locations can connect and play but you would need to change some of the configuration files and generate a new API key.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +115,7 @@ This is a more advanced example where you can see the implementation of Here Doc
 <!-- Features -->
 ## Features
 
-### Basics:
+### General:
 <ul>
   <li>History of previously entered commands</li>
   <li>Search and launch the right executable (based on the PATH variable, using a relative or an absolute path)</li>
@@ -128,7 +129,7 @@ This is a more advanced example where you can see the implementation of Here Doc
   <li><code>&amp;&amp;</code> and <code>||</code> with parenthesis for priorities</li>
 </ul>
 
-### Builtins:
+### Chat:
 <ul>
   <li><code>echo</code> with <code>-n</code></li>
   <li><code>cd</code> (relative or absolute path, <code>~</code> for HOME)</li>
@@ -139,7 +140,7 @@ This is a more advanced example where you can see the implementation of Here Doc
   <li><code>exit [exit_status]</code></li>
 </ul>
 
-### Redirections:
+### User:
 <ul>
   <li><code>[n] &lt; file</code> Redirecting Input</li>
   <li><code>[n] &lt;&lt; limiter</code> Here Documents with environment variable handling</li>
@@ -158,15 +159,20 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[Ersin]: https://github.com/42sin
+[Gilbert]: https://github.com/atchoglogilbert
+[Joko]: https://github.com/jpfuhl
+[Sonja]: https://github.com/SRein91
+[Anahi]: https://github.com/arendone
 [issues-url]: https://github.com/42sin/ft_transcendence/issues
 [license-url]: https://github.com/42sin/ft_transcendence/blob/master/LICENSE.txt
-[Go to Subject PDF]: en.transc_subject.pdf
-
+[Go to Subject PDF]: readme_images/en.transc_subject.pdf
+[42]: https://profile.intra.42.fr/oauth/applications
 [Nest.js]: https://img.shields.io/badge/-NestJs-ea2845?style=for-the-badge&logo=nestjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
+[Nest-url]: https://nestjs.com/
+[Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://docker.com/
+[Postgresql]: https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white
+[Postgresql-url]: https://postgresql.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [Angular-url]: https://angular.io/
