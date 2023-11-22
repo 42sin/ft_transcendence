@@ -161,19 +161,25 @@ For testing purposes, it will only run on your local system. It can also be run 
 ### Game
 To start a game you need to choose the map you want to play and join the waiting room. If there is someone already waiting you can join a game with them. Otherwise you will create a game and wait until someone joins.
 <br>
-insert video of games here
+
+https://github.com/42sin/ft_transcendence/assets/74476410/0c1e85e5-8b12-4ca6-9d3a-a9f330d42314
+
 <br>
 
 ### Chat
 General commands can be used without being in a channel but for the chat specific commands you need to be in a channel of course.
 <br>
-insert video of chats here
+
+https://github.com/42sin/ft_transcendence/assets/74476410/0b08732d-96ff-434b-adbe-6df3c2fef266
+
 <br>
 
 ### Profile
 Here you can change your own profile or see the stats of other users and add/delete or block/unblock them with the UI. Much easier than using the chat right?
 <br>
-insert video of profiles here
+
+https://github.com/42sin/ft_transcendence/assets/74476410/e1f1a135-af71-4f47-8108-7e5ff7ca4cbf
+
 <br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
