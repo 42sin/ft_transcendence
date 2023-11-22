@@ -11,14 +11,10 @@
 <h3 align="center">ft_transcendence</h3>
 
   <p align="center">
-    As beautiful as a shell
+    First Web Application
     <br />
-    <a href="https://github.com/42sin/ft_transcendence/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/42sin/ft_transcendence/issues">Request Feature</a>
   </p>
 </div>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -57,14 +53,10 @@ This is the first group project of the 42 core curriculum. The objective of this
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
+* [![Nest][Nest.js]][Nest-url]
+* [![Angular][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,3 +161,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/42sin/ft_transcendence/issues
 [license-url]: https://github.com/42sin/ft_transcendence/blob/master/LICENSE.txt
 [Go to Subject PDF]: en.transc_subject.pdf
+
+[Nest.js]: https://img.shields.io/badge/-NestJs-ea2845?style=for-the-badge&logo=nestjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
