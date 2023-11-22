@@ -34,8 +34,22 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#features">Features</a></li>
+    <li>
+	<a href="#features">Features</a>
+	<ul>
+	    <li><a href="#general">General</a></li>
+	    <li><a href="#chat">Chat</a></li>
+	    <li><a href="#user">User</a></li>
+	</ul>
+    </li>
+    <li>
+	<a href="#usage">Usage</a>
+	<ul>
+	    <li><a href="#game">Game</a></li>
+	    <li><a href="#chat">Chat</a></li>
+	    <li><a href="#profile">Profile</a></li>
+	</ul>
+    </li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -99,55 +113,67 @@ For testing purposes, it will only run on your local system. It can also be run 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-You can use the ft_transcendence as you would use any other Shell to execute commands. We handled a lot of unnecessary things that were not specifially required by the Subject, which you can read more about in <a href="#features">Features</a>
-
-Here is an example of a basic command using some of the control operators.
-<img src="example.png" height="351px" width="672px">
-
-This is a more advanced example where you can see the implementation of Here Documents, the variable used as a delimiter isn't expanded but the ones used inside of the Here Document are expanded.
-<img src="example2.png" height="351px" width="672px">
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- Features -->
 ## Features
 
 ### General:
 <ul>
-  <li>History of previously entered commands</li>
-  <li>Search and launch the right executable (based on the PATH variable, using a relative or an absolute path)</li>
-  <li>Environment variables ($ followed by a sequence of characters) expand to their values</li>
-  <li>Wildcards *</li>
-  <li>Ctrl-C, Ctrl-D, and Ctrl-\ behave like in bash</li>
-  <li><code>’</code> (single quotes - prevent from interpreting meta-characters in quoted sequence)</li>
-  <li><code>"</code> (double quotes - prevent from interpreting meta-characters in quoted sequence except for $)</li>
-  <li><code>$?</code> expands to the last exit status</li>
-  <li><code>|</code> Output of a command is connected to the input of the next Command</li>
-  <li><code>&amp;&amp;</code> and <code>||</code> with parenthesis for priorities</li>
+  <li><code>Pong Gameplay</code> Play the classic game of Pong on 3 different maps</li>
+  <li><code>Chat System</code> Engage in group or private chats with other users</li>
+  <li><code>Highscore Tab</code> Ranking of the best players</li>
+  <li><code>User Profile</code> See their stats, add them as a friend or block them</li>
+  <li><code>2FA Authentication</code> Improve your account security with Google Authenticator</li>
+  <li><code>42 API Integration</code> Sign in with your 42 API credentials</li>
+  <li><code>Themes</code> Choose one of 3 Color Themes to change the websites feeling</li>
 </ul>
 
 ### Chat:
 <ul>
-  <li><code>echo</code> with <code>-n</code></li>
-  <li><code>cd</code> (relative or absolute path, <code>~</code> for HOME)</li>
-  <li><code>pwd</code></li>
-  <li><code>export</code> without arguments or with a new environment variable to be set</li>
-  <li><code>unset</code></li>
-  <li><code>env</code></li>
-  <li><code>exit [exit_status]</code></li>
+  <li><code>/JOIN #CHANNELNAME (PASS)</code> Create or Join an existing channel with or without a password</li>
+  <li><code>/TALK_TO USERNAME</code> Private message a user</li>
+  <li><code>/KICK #CHANNELNAME USERNAME</code> Kick a User from a channel</li>
+  <li><code>/BAN #CHANNELNAME USERNAME</code> Ban a User from a channel</li>
+  <li><code>/PART #CHANNELNAME</code> Leave a channel</li>
+  <li><code>/DELETE #CHANNELNAME</code> Delete a channel</li>
+  <li><code>/CHANGE_PASSWORD #CHANNELNAME (PASS)</code> Change or remove the password of a channel</li>
+  <li><code>/UNMUTE</code> OR <code>/MUTE #CHANNELNAME USERNAME</code> Mute/Unmute a user of a channel</li>
+  <li><code>/UNBLOCK</code> OR <code>/BLOCK USERNAME</code> Block/Unblock a user</li>
+  <li><code>/ADD_ADMIN #CHANNELNAME USERNAME</code> Give someone admin privileges</li>
+  <li><code>/INVITE</code> OR <code>/ACCEPT USERNAME</code> Invite/Accept to a game</li>
 </ul>
 
 ### User:
 <ul>
-  <li><code>[n] &lt; file</code> Redirecting Input</li>
-  <li><code>[n] &lt;&lt; limiter</code> Here Documents with environment variable handling</li>
-  <li><code>[n] &gt; file</code> Redirecting Output</li>
-  <li><code>[n] &gt;&gt; file</code> Appending Redirected Output</li>
+  <li><code>Change your profile picture</code></li>
+  <li><code>Change your username</code></li>
+  <li><code>Activate 2FA with Google Authenticator</code></li>
+  <li><code>Add/Delete Friends</code></li>
+  <li><code>Block/Unblock users</code></li>
+  <li><code>Track wins/losses and your Winrate as %</code></li>
 </ul>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+### Game
+To start a game you need to choose the map you want to play and join the waiting room. If there is someone already waiting you can join a game with them. Otherwise you will create a game and wait until someone joins.
+<br>
+insert video of games here
+<br>
+
+### Chat
+General commands can be used without being in a channel but for the chat specific commands you need to be in a channel of course.
+<br>
+insert video of chats here
+<br>
+
+### Profile
+Here you can change your own profile or see the stats of other users and add/delete or block/unblock them with the UI. Much easier than using the chat right?
+<br>
+insert video of profiles here
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
