@@ -155,7 +155,7 @@ For testing purposes, it will only run on your local system. It can also be run 
 To start a game you need to choose the map you want to play and join the waiting room. If there is someone already waiting you can join a game with them. Otherwise you will create a game and wait until someone joins.
 <br>
 
-https://github.com/42sin/ft_transcendence/assets/74476410/0c1e85e5-8b12-4ca6-9d3a-a9f330d42314
+https://github.com/42sin/ft_transcendence/assets/74476410/33c23696-7751-43d7-9c86-61a77b004c5e
 
 <br>
 
@@ -163,7 +163,7 @@ https://github.com/42sin/ft_transcendence/assets/74476410/0c1e85e5-8b12-4ca6-9d3
 General commands can be used without being in a channel but for the chat specific commands you need to be in a channel of course.
 <br>
 
-https://github.com/42sin/ft_transcendence/assets/74476410/0b08732d-96ff-434b-adbe-6df3c2fef266
+https://github.com/42sin/ft_transcendence/assets/74476410/d7b39232-4b96-4d8a-81d9-c53a3300e203
 
 <br>
 
@@ -171,7 +171,7 @@ https://github.com/42sin/ft_transcendence/assets/74476410/0b08732d-96ff-434b-adb
 Here you can change your own profile or see the stats of other users and add/delete or block/unblock them with the UI. Much easier than using the chat right?
 <br>
 
-https://github.com/42sin/ft_transcendence/assets/74476410/e1f1a135-af71-4f47-8108-7e5ff7ca4cbf
+https://github.com/42sin/ft_transcendence/assets/74476410/989756d2-f1c2-4c35-b8b5-7b784d398761
 
 <br>
 
