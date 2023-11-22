@@ -61,14 +61,7 @@
 
 #### [Go to Subject PDF]
 
-This is the last group project of the 42 core curriculum and arguably the biggest one. It is a full-stack web application that provides an engaging and interactive platform where users can enjoy a game of traditional Pong. It is designed with a modern and user-friendly interface offering a seamless experience for gaming and social interactions.
-<br>
-#### Team members:
-- [Gilbert]
-- [Joko]
-- [Sonja]
-- [Anahi]
-- [Ersin]
+This is the last group project of the 42 core curriculum and arguably the biggest one. It is a full-stack web application that provides an engaging and interactive platform where users can enjoy a game of traditional Pong. It is designed with a modern and user-friendly interface offering a seamless experience for gaming and social interactions. This project was done in collaboration with [Gilbert], [Joko], [Sonja] and [Anahi]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
