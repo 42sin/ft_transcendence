@@ -38,7 +38,7 @@
 	<a href="#features">Features</a>
 	<ul>
 	    <li><a href="#general">General</a></li>
-	    <li><a href="#chat">Chat</a></li>
+	    <li><a href="#chat-commands">Chat Commands</a></li>
 	    <li><a href="#user">User</a></li>
 	</ul>
     </li>
@@ -127,7 +127,7 @@ For testing purposes, it will only run on your local system. It can also be run 
   <li><code>Themes</code> Choose one of 3 Color Themes to change the websites feeling</li>
 </ul>
 
-### Chat:
+### Chat Commands:
 <ul>
   <li><code>/JOIN #CHANNELNAME (PASS)</code> Create or Join an existing channel with or without a password</li>
   <li><code>/TALK_TO USERNAME</code> Private message a user</li>
