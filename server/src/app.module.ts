@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   app.module.ts                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jpfuhl <jpfuhl@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: mac <mac@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:59:11 by katchogl          #+#    #+#             */
-/*   Updated: 2023/10/27 20:20:01 by jpfuhl           ###   ########.fr       */
+/*   Updated: 2023/11/22 22:14:38 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ import { GameModule } from "./api/game/game.module";
 		UsersModule,
 		TypeOrmModule.forRoot({
 			type: 'postgres',
-			host: 'localhost',
-			// host: 'db',
-			port: 6000,
+			// host: 'localhost',
+			host: 'db',
+			port: 5432,
 			username: process.env.POSTGRES_USER,
 			password: process.env.POSTGRES_PASSWORD,
 			database: process.env.POSTGRES_DB,

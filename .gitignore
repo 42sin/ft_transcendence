@@ -1,5 +1,5 @@
 #environment
-docker/.env
+# docker/.env
 #db folder
 docker/db/*
 #uploads
