@@ -43,7 +43,7 @@
 	</ul>
     </li>
     <li>
-	<a href="#usage">Usage</a>
+	<a href="#usage-demo">Usage Demo</a>
 	<ul>
 	    <li><a href="#game">Game</a></li>
 	    <li><a href="#chat">Chat</a></li>
@@ -156,7 +156,7 @@ For testing purposes, it will only run on your local system. It can also be run 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usage Demo
 
 ### Game
 To start a game you need to choose the map you want to play and join the waiting room. If there is someone already waiting you can join a game with them. Otherwise you will create a game and wait until someone joins.
