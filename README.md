@@ -149,7 +149,8 @@ For testing purposes, it will only run on your local system. It can also be run 
   <li><code>Activate 2FA with Google Authenticator</code></li>
   <li><code>Add/Delete Friends</code></li>
   <li><code>Block/Unblock users</code></li>
-  <li><code>Track wins/losses and your Winrate as %</code></li>
+  <li><code>Matchhistory</code></li>
+  <li><code>Winrate as %</code></li>
 </ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
